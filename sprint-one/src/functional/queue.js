@@ -3,16 +3,20 @@ var makeQueue = function(){
 
   // Use an object with numeric keys to store values
   var storage = {};
+  var qStart = 0;
+  var qEnd = 0;
 
   // Implement the methods below
 
   instance.enqueue = function(value){
+    storage[qEnd++] = value;
   };
 
   instance.dequeue = function(){
   };
 
   instance.size = function(){
+    return qEnd - qStart;
   };
 
   return instance;
