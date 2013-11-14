@@ -7,11 +7,6 @@ var instance = Object.create(stackMethods);
   instance.storage = {};
   instance.length = 0; // Hint: set an initial value here
 
-  // Implement the methods below
-  // instance.size = stackMethods.size;
-  // instance.push = stackMethods.push;
-  // instance.pop = stackMethods.pop;
-
   return instance;
 };
 

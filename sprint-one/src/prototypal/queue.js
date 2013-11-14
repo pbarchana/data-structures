@@ -8,11 +8,6 @@ var instance = Object.create(queueMethods);
   instance.qStart = 0;
   instance.qEnd = 0;
 
-  // Implement the methods below
-  // instance.size = queueMethods.size;
-  // instance.enqueue = queueMethods.enqueue;
-  // instance.dequeue = queueMethods.dequeue;
-
   return instance;
 
 };
