@@ -8,28 +8,30 @@ var instance = {};
 
   // Implement the methods below
   instance.size = stackMethods.size;
-  
+  instance.push = stackMethods.push;
+  instance.pop = stackMethods.pop;
+
   return instance;
 };
 
 
 var stackMethods = { 
-/*	var push = function(value){
-    	length++;
-    	storage[length] = value;
-  	};
+	push : function(value){
+    	this.length++;
+    	this.storage[this.length] = value;
+  	},
 
-	var pop = function(){
-		if (length <= 0) {
-		  length = 0;
+	pop : function(){
+		if (this.length <= 0) {
+		  this.length = 0;
 		  return undefined;
 		}
-		var item = storage[length];
-		delete storage[length];
-		length-- ;
+		var item = this.storage[this.length];
+		delete this.storage[this.length];
+		this.length-- ;
 		return item;
-	};
-*/
+	},
+
 
   	size : function(){
    		console.log(this);
